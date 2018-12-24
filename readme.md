@@ -8,6 +8,15 @@ Important: the logged-in user needs to have Administrative privileges.
 1. Verify installation with command `brew --version`
 1. You will also have Git `git --version`
 
+# NVM
+Node Version Manager (NVM) is an important too for [Node.js](https://github.com/nodejs/node) development. It allows you to swith between multiple versions of Node.js
+1. Go [here](https://github.com/creationix/nvm) and follow instructions
+1. Verify installation with command: `nvm --version`
+1. Use NVM to display the available versions to install: `nvm ls-remote --lts`
+1. Use NVM to install based on LTS name: `nvm install --lts=LTS_NAME_HERE`. Installations can also be done to a specific version: `nvm install vX.YY.Z`
+1. Use NVM to use a specific version: `nvm use vX.YY.Z`
+1. 
+
 # GitHub
 1. Create GitHub Account
 1. Follow [these](https://help.github.com/categories/bootcamp/) instructions
