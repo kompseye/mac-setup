@@ -21,3 +21,16 @@ Node Version Manager (NVM) is an important too for [Node.js](https://github.com/
 1. Create GitHub Account
 1. Follow [these](https://help.github.com/categories/bootcamp/) instructions
 1. If you have Multi-Factor Authencation (MFA), then HTTPS authentication will not work. Instead create [SSH keys](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/) or [personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/).
+
+# Ruby
+1. Install [Ruby Version Manager (RVM)](https://rvm.io/rvm/install)
+    * Install: `\curl -sSL https://get.rvm.io | bash`
+    * Post-install: `source /Users/kompseye/.rvm/scripts/rvm`
+    * Install a version: `rvm install 2.7.0`
+    * Use a version: `rvm use 2.7.0`
+    * Add docs: `Ruby was built without documentation, to build it run: rvm docs generate-ri`
+1. Use Interactive Ruby Shell (irb)
+    * `rvm ls`
+    * `puts "hello world"`
+    * `exit`
+    
