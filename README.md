@@ -8,7 +8,7 @@ Important: the logged-in user needs to have Administrative privileges.
 1. Verify installation with command `brew --version`
 1. You will also have Git `git --version`
 
-# NVM
+# Node
 Node Version Manager (NVM) is an important too for [Node.js](https://github.com/nodejs/node) development. It allows you to swith between multiple versions of Node.js
 1. Go [here](https://github.com/creationix/nvm) and follow instructions
 1. Verify installation with command: `nvm --version`
@@ -34,3 +34,19 @@ Node Version Manager (NVM) is an important too for [Node.js](https://github.com/
     * `puts "hello world"`
     * `exit`
     
+# Java
+Nowadays there is the Oracle Java Development Kit (JDK) and Open JDK. Read more [here](https://medium.com/@chamikakasun/how-to-manage-multiple-java-version-in-macos-e5421345f6d0).
+1. Install Java Version Manager (jenv): `brew install jenv`
+1. Follow instructions to update your shell configuration file
+1. Install Maven: `brew install maven`
+1. Install Java: 
+    * `brew tap adoptopenjdk/openjdk`
+    * `brew cask install adoptopenjdk13`
+
+Brew installation problem?
+```
+cd /usr/local/Homebrew
+git fetch --tags
+git checkout 2.6.2 
+```
+Go back a version, see notes [here](https://github.com/ansible-collections/community.general/issues/1524#issuecomment-749226927)
