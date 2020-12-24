@@ -42,6 +42,9 @@ Nowadays there is the Oracle Java Development Kit (JDK) and Open JDK. Read more 
 1. Install Java: 
     * `brew tap adoptopenjdk/openjdk`
     * `brew cask install adoptopenjdk13`
+1. Verify Maven: `mvn --version`
+1. Verify Java: `java --version`
+1. Verify Java Compiler: `javac --version`
 
 Brew installation problem?
 ```
