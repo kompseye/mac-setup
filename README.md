@@ -66,3 +66,19 @@ git fetch --tags
 git checkout 2.6.2 
 ```
 Go back a version, see notes [here](https://github.com/ansible-collections/community.general/issues/1524#issuecomment-749226927)
+
+# Go
+1. Go here: https://golang.org/
+1. Follow the installation instructions
+1. Verify checksum: `shasum -a 256 installation-file.pkg`
+1. Install
+1. Verify install: `go version`
+1. Suggestion: add the following function to `.bashrc` file, then run `setgo` in the command-line to update the PATH with the location for the Go distribution.
+
+```
+function setgo {
+  export PATH=/usr/local/go/bin:$PATH
+}
+```
+
+
