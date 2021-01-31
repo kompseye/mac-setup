@@ -15,7 +15,20 @@ Node Version Manager (NVM) is an important too for [Node.js](https://github.com/
 1. Use NVM to display the available versions to install: `nvm ls-remote --lts`
 1. Use NVM to install based on LTS name: `nvm install --lts=LTS_NAME_HERE`. Installations can also be done to a specific version: `nvm install vX.YY.Z`
 1. Use NVM to use a specific version: `nvm use vX.YY.Z`
-1. 
+
+# Environment
+1. Ensure you have `.bash_profile` file with `vi ~/.bash_profile`
+1. Add this to the file
+
+```bash
+if [ -r ~/.bashrc ]; then
+   source ~/.bashrc
+fi
+```
+
+1. Ensure you have a `.bashrc` file with `vi ~/.bashrc`
+1. If you followed this README so far, you will have a `.bashrc` with information for NVM.
+1. Add aliases, functions, and other environment customizations to the `.bashrc`.
 
 # GitHub
 1. Create GitHub Account
