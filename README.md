@@ -81,4 +81,35 @@ function setgo {
 }
 ```
 
-
+# Python with pyenv
+1. Go here: https://github.com/pyenv/pyenv
+1. Follow the [installation](https://github.com/pyenv/pyenv#homebrew-on-macos) instructions
+    ```bash
+    brew update
+    brew install pyenv
+    echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.profile
+    echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.profile
+    echo 'eval "$(pyenv init --path)"' >> ~/.profile
+    ```
+1. After the installation `pyenv --version` will confirm the installation
+1. See also the `~/.profile` which should resemble:
+    ```bash
+    # pyenv
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init --path)"
+    ```
+1. Find available versions to install:
+    ```bash
+    # https://www.python.org/downloads/
+    pyenv install -l
+    pyenv install 3.9.5
+    ```
+1. Add virtualenv
+1. Follow the [installation](pyenv install 3.9.5) instructions
+    ```bash
+     brew install pyenv-virtualenv
+     pyenv virtualenv 3.9.5 sandbox-3.9.5
+     /bin/bash --login
+     pyenv activate sandbox-3.9.5
+    ```
