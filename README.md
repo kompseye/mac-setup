@@ -8,6 +8,8 @@ Important: the logged-in user needs to have Administrative privileges.
 1. Verify installation with command `brew --version`
 1. You will also have Git `git --version`
 
+Update Brew? `brew update` to see what's outdated then `brew upgrade`
+
 # Node
 Node Version Manager (NVM) is an important too for [Node.js](https://github.com/nodejs/node) development. It allows you to swith between multiple versions of Node.js
 1. Go [here](https://github.com/creationix/nvm) and follow instructions
@@ -76,10 +78,13 @@ Go back a version, see notes [here](https://github.com/ansible-collections/commu
 1. Suggestion: add the following function to `.bashrc` file, then run `setgo` in the command-line to update the PATH with the location for the Go distribution.
 
 ```
+# you may need to update the go version
 function setgo {
-  export PATH=/usr/local/go/bin:$PATH
+  export PATH=/usr/local/Cellar/go/1.19/bin/:$PATH
 }
 ```
+
+Using Homebrew? `brew install go`
 
 # Python with pyenv
 1. Go here: https://github.com/pyenv/pyenv
