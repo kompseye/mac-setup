@@ -86,6 +86,8 @@ function setgo {
 
 Using Homebrew? `brew install go`
 
+Updating? `brew update` then `brew upgrade go`
+
 # Python with pyenv
 1. Go here: https://github.com/pyenv/pyenv
 1. Follow the [installation](https://github.com/pyenv/pyenv#homebrew-on-macos) instructions
